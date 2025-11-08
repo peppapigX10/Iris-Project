@@ -11,14 +11,13 @@ function showSlides(n) {
     if (n > slides.length) {
         slideIndex = 1;
     }
-    
+
     if (n < 1) {
         slideIndex = slides.length;
     }
-    
+
     for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.display = "none"; // Fixed: style.display
     }
-    
-    slides[slideIndex - 1].style.display = "block";
-}
+
+    slides[slideIndex - 1].style.display = "block"; // Fixed: style.display

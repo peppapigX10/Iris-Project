@@ -1,5 +1,8 @@
-*{
+* {
     text-decoration:none;
+    font-family: 'Plus Jakarta Sans';
+    margin:0;
+    padding:0;
 }
 body {
     margin:0;
@@ -10,54 +13,74 @@ body {
     background-repeat:no-repeat;
 }
 
+.UnderlineButtons:hover {
+    text-decoration:underline;
 
-/* Navigation Bar */
-.NavBar-background {
-    display: block;
-    width: 100%;
-    height: 50%;
+}
+
+h1 {
+    font-size:6rem;
+    background:linear-gradient(#C188CD,#909EF9);
+    background-clip:text;
+    color:transparent;
+    text-shadow: 0 0 20px #c379dbb1;
+}
+
+h3 {
+    font-weight:200;
+    background:linear-gradient(#C188CD,#909EF9);
+    background-clip:text;
+    color:transparent;
+    text-shadow: 0 0 20px #c379dbb1;
     margin:0;
 }
 
-.navbar-container {
-    display:relative;
-    align-items:center;
-    justify-content:space-between;
-    position:relative;
-}
-
-.navbar-list {
-    position: absolute;
-    top:0;
-    align-items:center;
-    width: 100%;
-    height:100%;
+nav {
+    position:fixed;
+    background-color:#434281;
+    width:100%;
+    border:solid 1px #8061DF;
     display:flex;
-    gap:3px;
-    list-style:none;
-    margin-right:25px;
+    justify-content: space-between;
+    align-items:center;
+    height:4rem;
+    margin:0;
+    padding:0px 30px;
+    box-sizing: border-box;
     
 }
 
-.navbar-list li {
-    display: inline-block;
+nav ul {
+    display:flex;
+    width:100%;
+    gap:10px;
+    justify-content:end;
+    list-style-type: none; 
+    height:fit-content;
+    align-items:center;
+    margin:0;
+    /* removing the default bullet points */
+    
 }
 
-.nav-buttons {
-    width:62%;
+h4 {
+    color: #D8B6FD;
+    font-size: 18px;
     height:auto;
+    font-weight:500;
+    /* line-height: 1.6; */
+
+}
+#home {
+    display:flex;
 }
 
-.navbar{
-    padding-right:15px;
-    padding-left:15px;
+#home:hover {
+    background:blue;
 }
 
-.navdiv{
-    display:flex; align-items:right;justify-content:space-between;
-}
 /* Page Top Section */
-#page-top{
+/* #page-top{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,9 +103,9 @@ body {
     height:auto;
     display:block;
     margin-top: 80px;
-}
+} */
 /*About section*/
-#about{
+/* #about{
     padding: 50px 20px;
     text-align:center;
 }
@@ -135,9 +158,9 @@ body {
 .about-image-slideshow {
     max-width: 500px
     position
-}
+} */
 /*for tablets*/
-@media (max-width:900px){
+/* @media (max-width:900px){
     #page-top p{
         font-size: 10px;
         padding: 0 25px;
@@ -148,7 +171,7 @@ body {
         margin-top: 40px;
     }
 }
-/* for phones */
+for phones
 @media (max-width:600px){
     #page-top p{
         font-size: 8px;
@@ -158,5 +181,5 @@ body {
     .motto {
         margin-top: 30px;
     }
-}
+} */
 

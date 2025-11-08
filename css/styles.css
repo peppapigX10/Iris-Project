@@ -1,0 +1,162 @@
+*{
+    text-decoration:none;
+}
+body {
+    margin:0;
+    padding:0;
+    background-image:url("../img/iris_bg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+/* Navigation Bar */
+.NavBar-background {
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin:0;
+}
+
+.navbar-container {
+    display:relative;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+.navbar-list {
+    position: absolute;
+    top:0;
+    align-items:center;
+    width: 100%;
+    height:100%;
+    display:flex;
+    gap:3px;
+    list-style:none;
+    margin-right:25px;
+    
+}
+
+.navbar-list li {
+    display: inline-block;
+}
+
+.nav-buttons {
+    width:62%;
+    height:auto;
+}
+
+.navbar{
+    padding-right:15px;
+    padding-left:15px;
+}
+
+.navdiv{
+    display:flex; align-items:right;justify-content:space-between;
+}
+/* Page Top Section */
+#page-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+
+#page-top p {
+    color: #D8B6FD;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:16px;
+    max-width: 550px;
+    padding: 0 60px; 
+    margin-top: 30px;
+}
+
+.motto{
+    max-width: 843px;
+    width:58%;
+    height:auto;
+    display:block;
+    margin-top: 80px;
+}
+/*About section*/
+#about{
+    padding: 50px 20px;
+    text-align:center;
+}
+
+.about-title{
+    max-width: 500px;
+    margin-bottom: 40px;
+    width:35%;
+    height:auto;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+    padding: 0 60px;
+}
+
+.about-text {
+    flex: 1;
+    color: #D8B6FD;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.about-image-slideshow {
+    max-width: 500px
+    position
+}
+/*for tablets*/
+@media (max-width:900px){
+    #page-top p{
+        font-size: 10px;
+        padding: 0 25px;
+        
+        margin-top: 15px;
+    }
+    .motto {
+        margin-top: 40px;
+    }
+}
+/* for phones */
+@media (max-width:600px){
+    #page-top p{
+        font-size: 8px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .motto {
+        margin-top: 30px;
+    }
+}
+
